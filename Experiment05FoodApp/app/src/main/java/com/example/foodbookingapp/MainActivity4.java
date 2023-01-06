@@ -1,0 +1,100 @@
+package com.example.foodbookingapp;
+
+import android.app.Activity;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity4 extends AppCompatActivity {
+
+    // Pasta
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.pasta);
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("black"));
+        actionBar.setBackgroundDrawable(colorDrawable);
+
+        ImageView image = (ImageView) findViewById(R.id.imageView);
+        registerForContextMenu(image);
+
+        // -------------------------PIZZA1----------------------------------------------------------------------------------
+        Button button1 = (Button) findViewById(R.id.button);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity4.this, "Added to cart", Toast.LENGTH_SHORT).show();
+
+                TextView name = (TextView) findViewById(R.id.textView2);
+                TextView price = (TextView) findViewById(R.id.textView3);
+                int cost = Integer.parseInt(price.getText().toString());
+                Cart.addItem(name.getText().toString(), cost);
+
+            }
+        });
+
+        Button button2 = (Button) findViewById(R.id.button2);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity4.this, "Added to cart", Toast.LENGTH_SHORT).show();
+
+                TextView name = (TextView) findViewById(R.id.textView4);
+                TextView price = (TextView) findViewById(R.id.textView5);
+                int cost = Integer.parseInt(price.getText().toString());
+                Cart.addItem(name.getText().toString(), cost);
+
+            }
+        });
+
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        MenuInflater inflater = getMenuInflater();
+        menu.setHeaderTitle("Add Toppings");
+        menu.add(0, v.getId(), 0, "Rs20: Olives");
+        menu.add(0, v.getId(), 0, "Rs50: Pepperoni");
+        menu.add(0, v.getId(), 0, "Rs70: Mushrooms");
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        Toast.makeText(this, "Selected Item: " + item.getTitle(), Toast.LENGTH_SHORT).show();
+
+        if (item.getTitle() == "Rs20: Olives") {
+            TextView price = (TextView) findViewById(R.id.textView3);
+            int cost = Integer.parseInt(price.getText().toString());
+            cost = cost + 20;
+            price.setText(Integer.toString(cost));
+
+        } else if (item.getTitle() == "Rs50: Pepperoni") {
+            TextView price = (TextView) findViewById(R.id.textView3);
+            int cost = Integer.parseInt(price.getText().toString());
+            cost = cost + 50;
+            price.setText(Integer.toString(cost));
+
+        } else if (item.getTitle() == "Rs70: Mushrooms") {
+            TextView price = (TextView) findViewById(R.id.textView3);
+            int cost = Integer.parseInt(price.getText().toString());
+            cost = cost + 60;
+            price.setText(Integer.toString(cost));
+
+        }
+        return true;
+    }
+}

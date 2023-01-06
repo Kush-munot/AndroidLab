@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:textAlignment="center"
+        android:textColor="#645CAA"
+        android:textSize="36dp"
+        android:fontWeight="700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/usrnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textAlignment="4"
+        android:textColor="#645CAA"
+        android:textSize="22dp"
+        android:fontWeight="700"
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/usrname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:labelFor="@id/loginText"
+        android:hint="Username"
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textAlignment="4"
+        android:textColor="#645CAA"
+        android:textSize="22dp"
+        android:fontWeight="700"
+        app:layout_constraintTop_toBottomOf="@id/usrname"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:labelFor="@id/loginText"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/usrname"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"
+        android:text="Login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="15dp"
+        android:text="Signup"
+        app:layout_constraintLeft_toRightOf="@id/loginButton"
+
+        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

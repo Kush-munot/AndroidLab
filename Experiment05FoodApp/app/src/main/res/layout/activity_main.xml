@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@drawable/download"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Your 24/7 Food Craving destination"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@color/teal_200"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <Button android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Now"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/teal_200"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView"-->
+<!--        app:srcCompat="@drawable/welcm"-->
+<!--        tools:ignore="ContentDescription,MissingConstraints"-->
+<!--        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

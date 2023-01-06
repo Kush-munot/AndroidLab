@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="freqSpinner" type="id" />
+    <item name="radioGrp" type="id" />
+    <item name="freq" type="id" />
+    <item name="interest" type="id" />
+    <item name="heading" type="id" />
+    <item name="name" type="id" />
+    <item name="email" type="id" />
+    <item name="mobile" type="id" />
+    <item name="dob" type="id" />
+    <item name="dobInput" type="id" />
+    <item name="age" type="id" />
+    <item name="gender" type="id" />
+    <item name="intList" type="id" />
+    <item name="ckBox" type="id" />
+</resources>

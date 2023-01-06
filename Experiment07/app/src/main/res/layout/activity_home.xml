@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Data Submitted"
+        android:textColor="@color/teal_700"
+
+        />
+    
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Name:"
+
+        />
+
+    <TextView
+        android:id="@+id/BloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="BloodGroup:"
+
+        />
+
+    <Button
+        android:id="@+id/clearText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Voluntary Blood Donation Programme Details."
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/teal_700"
+       />
+
+
+</LinearLayout>

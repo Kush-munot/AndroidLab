@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:paddingTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/usr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:gravity="left"
+        android:textSize="22dp"
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/heading"
+        android:paddingLeft="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/usrInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@id/usr"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+
+        />
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:gravity="left"
+        android:textSize="22dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/usrInput"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/passInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/pass"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passInput"
+        android:text="Login"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/fogPassBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passInput"
+        android:layout_toRightOf="@id/loginBtn"
+        android:text="Forgot Password"
+        android:layout_marginLeft="100dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    app:layout_editor_absoluteX="1dp"
+    app:layout_editor_absoluteY="1dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="News-Letter Registration Form"
+        android:textColor="@color/teal_200"
+        android:textSize="28sp" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/name"
+        android:height="40dp"
+        android:hint="Enter Name"
+        android:inputType="text"
+
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/email"
+        android:height="40dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:text="Phone Num."
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/mobileField"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/mobile"
+        android:height="40dp"
+        android:hint="Enter Phone Number"
+        android:inputType="number"
+
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/mobile"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="D.O.B"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/dobInput"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/dob"
+        android:height="40dp"
+        android:hint="Enter Date"
+        android:inputType="date"
+
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/mobile"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/dobInput"
+        android:gravity="center_vertical"
+        android:text="Age"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/ageField"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/age"
+        android:height="40dp"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:text="Gender"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="134dp"
+        android:layout_below="@id/dob"
+        android:layout_toRightOf="@id/gender"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't want to Disclose"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/freq"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/radioGrp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Frequency"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <Spinner
+        android:id="@+id/freqSpinner"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/radioGrp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/freq" />
+
+    <TextView
+        android:id="@+id/interest"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/freq"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="Interest"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <ListView
+        android:id="@+id/intList"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/freq"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/interest"
+        android:entries="@array/items" />
+
+    <CheckBox
+        android:id="@+id/ckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intList"
+        android:layout_centerHorizontal="true"
+        android:text="I agree to Terms and Conditions" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ckBox"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/teal_700"
+        android:enabled="false"
+        android:text="Submit" />
+
+
+
+</RelativeLayout>
+</ScrollView>

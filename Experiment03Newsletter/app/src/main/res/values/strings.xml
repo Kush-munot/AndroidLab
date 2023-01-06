@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">News Letter Reg Form</string>
+    <string-array name="items">
+        <item>Cooking</item>
+        <item>Reading</item>
+        <item>Playing</item>
+        <item>Music</item>
+        <item>Binge Watching</item>
+    </string-array>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10sp"
+    tools:context=".MainActivity2"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cart Value"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/trash_5753"
+           android:layout_margin="20sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:background="@color/white"
+           android:id="@+id/imageButton"
+                />
+           
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+         />
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        app:layout_constraintLeft_toRightOf="@id/list1"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        />
+
+        <TextView android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cost"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/list1"
+            />
+
+
+    <Button
+        android:id="@+id/NotifyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Now"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/total"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="@color/teal_700" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

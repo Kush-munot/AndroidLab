@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/data_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Submitted to Backend"
+        android:textColor="@color/teal_700"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+         />
+
+    <TextView
+        android:id="@+id/dataName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/data_heading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dataEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/dataName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dataAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/dataEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dataDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/dataAge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dataPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/dataDob"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+
+        />
+
+    <Button
+        android:id="@+id/portfolioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:text="Visit My Portfolio"
+        app:layout_constraintTop_toBottomOf="@id/dataPhone"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp" />
+
+    <Button
+        android:id="@+id/callMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:text="Call Me"
+        app:layout_constraintTop_toBottomOf="@id/portfolioButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp" />
+
+    <Button
+        android:id="@+id/visitMyStore"
+        android:layout_width="wrap_content"
+        android:width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Visit My Store"
+        app:layout_constraintTop_toBottomOf="@id/callMe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp" />
+
+    <Button
+        android:id="@+id/LetsConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:text="Visit My Github"
+        app:layout_constraintTop_toBottomOf="@id/visitMyStore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
